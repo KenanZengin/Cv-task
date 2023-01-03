@@ -1,0 +1,117 @@
+@mixin width($value){
+    width: $value ;
+}
+
+
+
+//padding
+
+@mixin padding($value){
+    padding: $value ;
+}
+
+@mixin padding_t($value){
+    padding-top: $value ;
+}
+@mixin padding_l($value){
+    padding-left: $value ;
+}
+@mixin padding_b($value){
+    padding-bottom: $value ;
+}
+@mixin padding_r($value){
+    padding-right: $value ;
+}
+
+@mixin padding_two_value($value1,$value2){
+    padding: $value1 $value2;
+}
+
+@mixin padding_all($value1,$value2,$value3,$value4){
+    padding:$value1 $value2 $value3 $value4 ;
+}
+
+
+
+//margin
+
+@mixin margin($value){
+    margin: $value ;
+}
+
+@mixin margin_t($value){
+    margin-top: $value ;
+}
+@mixin margin_l($value){
+    margin-left: $value ;
+}
+@mixin margin_b($value){
+    margin-bottom: $value ;
+}
+@mixin margin_r($value){
+    margin-right: $value ;
+}
+
+@mixin margin_two_value($value1,$value2){
+    margin: $value1 $value2;
+}
+
+@mixin margin_all($value1,$value2,$value3,$value4){
+    margin:$value1 $value2 $value3 $value4 ;
+}
+
+@mixin margin_auto($value : 0){
+    margin: $value auto;
+}
+
+
+
+//gap
+
+@mixin gap_all($value){
+    gap: $value;
+}
+
+@mixin gap-x($value){
+    gap : 0 $value
+}
+
+@mixin gap-y($value){
+    gap : 0 $value
+}
+
+@mixin gap-x-y($value1,$value2){
+    gap: $value1 $value2;
+}
+
+
+
+//border
+
+
+@mixin border($value,$color){
+    border: $value solid $color;
+}
+
+@mixin b_radius($value){
+    border-radius: percentage($value/100) ; 
+}
+
+
+
+
+//flex-justify-align
+
+@mixin justifty-choose($value){
+    justify-content: $value;
+}
+@mixin align-choose($value){
+    align-items: $value;
+}
+
+
+
+//text-center
+@mixin text-center{
+    text-align: center;
+}

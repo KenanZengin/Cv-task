@@ -1,0 +1,105 @@
+@import "variables.scss";
+@import "mixing.scss";
+@import "reset.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.display-flex{
+    display: flex;
+}
+
+.container{
+    @include margin_auto(50px);
+    @include width(1200px);
+    @include padding(50px);
+    @include border(2px,$white)   
+}
+
+
+//header-section
+
+.header{
+   
+    @include padding_b(100px);
+    @extend .display-flex;
+    &-img{
+        flex:15%;
+        @extend .display-flex;
+        @include justifty-choose(center);
+        img{
+            @include b_radius(50);
+        }
+    }
+    &-titles{
+        flex: 60%;
+        
+        @include padding_all(10px,0px ,5px ,20px );
+        h4{
+           @include padding_b(15px)
+        }
+        span{
+            img{
+                
+                @include margin_r(6px);
+    
+            }
+        }
+    }
+    &-links{
+        flex: 35%;
+    }
+
+}
+
+
+//sections
+
+.section{
+    @extend .display-flex;
+    @include margin_b(100px);
+    &-img{
+        flex: 15%;
+        @extend .display-flex;
+        @include justifty-choose(center);
+        @include align-choose(flex-start);
+        
+    }
+    &-info{
+        flex: 85%;
+        @include padding_l(40px);
+        .exper_inf{
+            @include margin_b(50px);
+        }
+        &-experience{
+            @extend .display-flex;
+            @include justifty-choose(space-between);
+            @include margin_b(20px);
+            .triple{
+                @extend .display-flex;
+                width: 80%;
+                @include gap-y(50px);
+                @include align-choose(center);
+                @include padding_l(90px);
+            }
+            .time_loc{  
+                @extend .display-flex;
+                flex-direction: column;
+                @include align-choose(flex-end);
+            }
+        }
+    }
+
+}
+
+
+
+
+
+.update_hist{
+    width: 1200px;
+    @extend .display-flex;
+    @include justifty-choose(flex-end);
+    margin: 0 auto;
+}

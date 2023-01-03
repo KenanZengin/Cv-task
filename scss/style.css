@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* > * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+p, li, span, a {
+  color: #2C74B3;
+}
+
+h4 {
+  color: #3C79F5;
+}
+
+h1, h2, h3 {
+  color: #144272;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.display-flex, .update_hist, .section-info-experience .time_loc, .section-info-experience .triple, .section-info-experience, .section-img, .section, .header-img, .header {
+  display: flex;
+}
+
+.container {
+  margin: 50px auto;
+  width: 1200px;
+  padding: 50px;
+  border: 2px solid #ECE8DD;
+}
+
+.header {
+  padding-bottom: 100px;
+}
+.header-img {
+  flex: 15%;
+  justify-content: center;
+}
+.header-img img {
+  border-radius: 50%;
+}
+.header-titles {
+  flex: 60%;
+  padding: 10px 0px 5px 20px;
+}
+.header-titles h4 {
+  padding-bottom: 15px;
+}
+.header-titles span img {
+  margin-right: 6px;
+}
+.header-links {
+  flex: 35%;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+.section-img {
+  flex: 15%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-info {
+  flex: 85%;
+  padding-left: 40px;
+}
+.section-info .exper_inf {
+  margin-bottom: 50px;
+}
+.section-info-experience {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-info-experience .triple {
+  width: 80%;
+  gap: 0 50px;
+  align-items: center;
+  padding-left: 90px;
+}
+.section-info-experience .time_loc {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.update_hist {
+  width: 1200px;
+  justify-content: flex-end;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
